@@ -1,41 +1,63 @@
-# Food Delivery System
+# Food Delivery System Project Report
 
-Junk File Organizer is a python program that helps to reduce the manual effort for the user by organizing all files in appropriate folder within seconds.
+Food Delivery System is a python program which offer the food at your doorstep.
+
+## About Project
+
+• This program is made for restaurant owner and for customer, where owner can add or remove food items in its restaurant.
+
+• And the customer access this program to order the food item he/she wish.
+
+• In this program, we provide a choice to select restaurant, which will describe below in :
+```
+How Program works
+```
+• Online or Cash On Delivery both the choice for payment we provide to the customer.
 
 ## Module Used 
 
-• Time - 
+• time.sleep() in python- 
 
-To know more about Time module go through the given link :-
-```bash
-https://www.geeksforgeeks.org/os-module-python-examples/
+To know more about time.sleep() module go through the given link :-
 ```
-## How The Program Works 
-
-
-• To Organize The Junk File On The Basis Of Size :- I have used a variable(size) to store the size of the file and then checking the file size by  putting some conditions and then arranging the files into their specific folders by creating new directories as per the size of the files. All the files are first moved into "Organized Directory" then inside this folder all the other directories are created accordingly. The files which are in Bytes are stored inside a new directory called BYTES and just like that all the different files are arranged in the subsequent folders( BYTES, KB, MB, GB).
-
-• To Organize The Junk File On The Basis Of Extension :- I have created a dictionary and saved all the possible extensions i can think of. After that checking the extension of the junk file in the computer directory and then compairing it with my created dictionary  and checking is that extension in present in dictionary ,if matched then creating the new directory named "Organized" and inside it again creating new directory  with respect to the extension name and then moving the different files in the respective directory and in case if the unknown extension is encountered than automatically a new directory named "OTHER FILES" will be created and inside that all the unknown extension files will be moved.
-
-
+https://www.geeksforgeeks.org/sleep-in-python/
+```
 
 ## Prerequisite
-• Need junk files and their location .
+• VS code with bash shell
+
+• python enable in VS code
+
 
 ## Instructions To Run
-To run this program in command prompt ,you have to paste the "organizeJunkFile.py"
-inside the folder where all junk files are present and then open the command prompt and
-pass the following commands :-
-
-• If you want to organize by extension :
-```bash
-python organizeJunkFile.py ext
+To run this program in in VS code, you have to clone my project data from my github repository 
+```
+https://github.com/attainu/python-project-keshav-priyadarshi-au9/tree/dev
 ```
 
-• If you want to organize by size : 
+• Now, clone the files and open in VS code and run the python file which is
 ```bash
-python organizeJunkFile.py size
+food_ordering_system.py 
 ```
+every other file is accessible from the given file name. No need to open other file for access this program.
 
-• If you do not pass any argument by default it will organize the files with respect to
-their extensions.
+## How The Program Works 
+
+• Now, we learn how this program will run, we provide the testcase for how many times you want to access the program. 
+
+• Here, we give the choice as you are a restaurant owner or a customer.
+
+• If the program is run by restaurant owner then he/she choose the option for owner, then it will ask for update menu or to remove the menu whatever you choose the program informs the update what you made.
+
+• If the program is run by customer then he/she must opt for food order option. 
+
+
+• Here we provide the selection strategy for restaurant food item. If customer want to visit the restaurant which provide lowest cost then he/she can order one item only. 
+
+• Other strategy is that we provide to choose the restaurant and order maximum of three different items not same item multiple time from that selected restaurant.
+
+• After selection of food item we ask for payment, after payment food will be processed and will deliver to the customer.
+
+## Note
+
+• Please input the valid data whenever it will ask.

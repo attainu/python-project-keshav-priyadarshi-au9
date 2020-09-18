@@ -21,7 +21,7 @@ T = int(input("Enter the testcase: "))
 for i in range (T):
     print("~~~~~~~~~~~~~~~Welcome to Food-E-Licious~~~~~~~~~~~~~~~~~~~~~")
     
-    op = input("Hello! are you a CUSTOMER OR OWNER. Press 1.CUSTOMER, Press 2.OWNER: ")
+    op = input("Hello! are you a CUSTOMER OR RESTAURANT OWNER. Press 1.CUSTOMER, Press 2.OWNER: ")
     if op == '1':
         print("We have certain rule to choose food item, if you search for lowest price then you can order one item in a session")
         op = input("Press 1.ORDER LOWEST PRICE FOOD & Press 2.ORDER MULTIPLE ITEM: ")
