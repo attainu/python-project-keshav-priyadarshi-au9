@@ -12,7 +12,7 @@ class Multiple_Order_Selection(Restaurant_A,Restaurant_B,Restaurant_C):
         
         print("!!! We have the following restaurants !!!")
         
-        print("1.Restaurant-A","2.Restaurant-B","3.Restaurant-C")
+        print("1.RESTAURANT-A","2.RESTAURANT-B","3.RESTAURANT-C")
         
         self.res_name = input("Choose the restaurant by number: ")
         
@@ -20,12 +20,11 @@ class Multiple_Order_Selection(Restaurant_A,Restaurant_B,Restaurant_C):
 
             print(res_A.menu_A)
             for i in range (self.max_order):
-                # while(True):
                 self.choice = input("Enter the item name you wish to order: ")
                 self.mul_order_list[self.choice]=res_A.menu_A[self.choice]
                                     
                 if i == '1':
-                    self.choice = input("Do you wish to add more food in your cart. Press Y for yes & N for no: ")
+                    self.choice = input("Do you wish to add more food . Press Y for YES & N for NO: ")
                     if self.choice == 'Y' or self.choice == 'y':
                         print("This is the last item you will select as your cart is about to full")
                         self.choice = input("Enter the last item name you wish to add: ")
@@ -33,13 +32,13 @@ class Multiple_Order_Selection(Restaurant_A,Restaurant_B,Restaurant_C):
                         break
                     elif self.choice == 'N' or self.choice == 'n':
                         break
-                self.choice = input("Do you wish to add more food in your cart. Press Y for yes & N for no: ")
+                self.choice = input("Do you wish to add more food. Press Y for YES & N for NO: ")
                 if self.choice == 'Y' or self.choice == 'y':
                     continue
                 elif self.choice == 'N' or self.choice == 'n':
                     break
             
-            self.py_choice = input("Do you wish to continue for payment.Press 'Y' for yes & 'N' for exit: ") 
+            self.py_choice = input("Do you wish to continue for PAYMENT.Press 'Y' for YES & 'N' for NO: ") 
 
             if self.py_choice == 'Y' or self.py_choice == 'y':
                 Payment.order_payment(self.mul_order_list)
@@ -56,7 +55,7 @@ class Multiple_Order_Selection(Restaurant_A,Restaurant_B,Restaurant_C):
                 self.choice = input("Enter the item name you wish to order: ")
                 self.mul_order_list[self.choice]=res_B.menu_B[self.choice]
                 if i == 1:
-                    self.choice = input("Do you wish to add more food in your cart. Press Y for yes & N for no: ")
+                    self.choice = input("Do you wish to add more food. Press Y for YES & N for NO: ")
                     if self.choice == 'Y' or self.choice == 'y':
                         print("This is the last item you will select as your cart is about to full")
                         self.choice = input("Enter the item name you wish to order: ")
@@ -64,13 +63,13 @@ class Multiple_Order_Selection(Restaurant_A,Restaurant_B,Restaurant_C):
                         break
                     elif self.choice == 'N' or self.choice == 'n':
                         break
-                self.choice = input("Do you wish to add more food in your cart. Press Y for yes & N for no: ")
+                self.choice = input("Do you wish to add more food. Press Y for YES & N for NO: ")
                 if self.choice == 'Y' or self.choice == 'y':
                     continue
                 elif self.choice == 'N' or self.choice == 'n':
                     break
             
-            self.py_choice = input("Do you wish to continue for payment.Press 'Y' for yes & 'N' for exit: ") 
+            self.py_choice = input("Do you wish to continue for payment.Press 'Y' for YES & 'N' for NO: ") 
 
             if self.py_choice == 'Y' or self.py_choice == 'y':
                 Payment.order_payment(self.mul_order_list)
@@ -87,7 +86,7 @@ class Multiple_Order_Selection(Restaurant_A,Restaurant_B,Restaurant_C):
                 self.choice = input("Enter the item name you wish to order: ")
                 self.mul_order_list[self.choice]=res_C.menu_C[self.choice]
                 if i == 1:
-                    self.choice = input("Do you wish to add more food in your cart. Press Y for yes & N for no: ")
+                    self.choice = input("Do you wish to add more food. Press Y for YES & N for NO: ")
                     if self.choice == 'Y' or self.choice == 'y':
                         print("This is the last item you will select as your cart is about to full")
                         self.choice = input("Enter the item name you wish to order: ")
@@ -95,12 +94,12 @@ class Multiple_Order_Selection(Restaurant_A,Restaurant_B,Restaurant_C):
                         break
                     elif self.choice == 'N' or self.choice == 'n':
                         break
-                self.choice = input("Do you wish to add more food in your cart. Press Y for yes & N for no: ")
+                self.choice = input("Do you wish to add more food. Press Y for YES & N for NO: ")
                 if self.choice == 'Y' or self.choice == 'y':
                     continue
                 elif self.choice == 'N' or self.choice == 'n':
                     break
-            self.py_choice = input("Do you wish to continue for payment.Press 'Y' for yes & 'N' for exit: ") 
+            self.py_choice = input("Do you wish to continue for payment.Press 'Y' for YES & 'N' for NO: ") 
 
             if self.py_choice == 'Y' or self.py_choice == 'y':
                 Payment.order_payment(self.mul_order_list)

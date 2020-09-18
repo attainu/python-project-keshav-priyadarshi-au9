@@ -20,28 +20,22 @@ res_C.food_item()
 T = int(input("Enter the testcase: "))
 for i in range (T):
     print("~~~~~~~~~~~~~~~Welcome to Food-E-Licious~~~~~~~~~~~~~~~~~~~~~")
-    while(True):
-        op = input("Hello user! Press 1 for order the food, Press 2 for update menu, Press 3 for exit: ")
+    
+    op = input("Hello USER! Press 1.ORDER FOOD, Press 2.UPDATE MENU")
+    if op == '1':
+        print("We have certain rule to choose food item, if you search for lowest price then you can order one item in a session")
+        op = input("Press 1.ORDER LOWEST PRICE FOOD & Press 2.ORDER MULTIPLE ITEM: ")
         if op == '1':
-            print("We have certain rule to choose food item, if you search for lowest price then you can order one item in a session")
-            while(True):
-                op = input("Press 1 for order lowest price food & press 2 for order multiple item: ")
-                if op == '1':
-                    sngl.single_order(res_A, res_B, res_C)
-                    break
-                elif op == '2':
-                    mul.multiple_order(res_A, res_B, res_C)
-                    break
-                else:
-                    print("ooopppss! please input valid option")
-                    continue
-        elif op == '2':
-            upd.add_item(res_A, res_B, res_C)
+            sngl.single_order(res_A, res_B, res_C)
         
-        elif op == '3':
-            exit()
+        elif op == '2':
+            mul.multiple_order(res_A, res_B, res_C)
+                
+    elif op == '2':
+        upd.add_item(res_A, res_B, res_C)
+        
+    # elif op == '3':
+    #     exit()
 
-        else:
-            print("ooopppss! please input valid option")
-            continue
+    
   
