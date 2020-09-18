@@ -10,11 +10,11 @@ class Payment:
         print("Your total order value is Rs",sum)
         while(True):
             print("Please select the payment method for your order: ")
-            n = int(input("1.COD 2.UPI: "))
-            if n == 1:
+            n = input("1.COD 2.UPI: ")
+            if n == '1':
                 print("accepted your request COD")
                 break
-            elif n == 2:
+            elif n == '2':
                 n = input("Please enter your UPI ID: ")
                 print("Your payment is in progress.....") 
                 time.sleep(10)
@@ -30,4 +30,6 @@ class Payment:
         print("Your food is ready to deliver. It will reach by you in 30 minutes :)")
 
         print("Thanks for choosing us")
+        
+        
 
