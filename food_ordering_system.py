@@ -22,9 +22,11 @@ for i in range (T):
     print("~~~~~~~~~~~~~~~Welcome to Food-E-Licious~~~~~~~~~~~~~~~~~~~~~")
     
     op = input("Hello! are you a CUSTOMER OR RESTAURANT OWNER. Press 1.CUSTOMER, Press 2.OWNER: ")
+    print()
     if op == '1':
-        print("We have certain rule to choose food item, if you search for lowest price then you can order one item in a session")
-        op = input("Press 1.ORDER LOWEST PRICE FOOD & Press 2.ORDER MULTIPLE ITEM: ")
+        
+        op = input("Press 1.ORDER LOWEST PRICE FOOD & Press 2.CHOOSE RESTAURANT FOR MULTIPLE ORDER: ")
+        print()
         if op == '1':
             sngl.single_order(res_A, res_B, res_C)
         
