@@ -14,7 +14,7 @@ class Update_Menu(Restaurant_A,Restaurant_B,Restaurant_C):
         
         if self.res_name == '1':
             print("Your menu are: ",res_A.menu_A)
-            self.op = input("Press 1 for ADD ITEM & 2 for RETURN: ")
+            self.op = input("Press 1 for ADD ITEM & 2 for REMOVE ITEM & 3 for RETURN: ")
             if self.op == '1':
                 self.item = input("Add the name of item: ")
                 self.price = input("Add the price: ")
@@ -22,13 +22,18 @@ class Update_Menu(Restaurant_A,Restaurant_B,Restaurant_C):
                 print("Your updated menu are: ",res_A.menu_A)
 
             elif self.op == '2':
+                self.item = input("Type the item you want to remove: ")
+                del res_A.menu_A[self.item]
+                print("Your updated menu are: ",res_A.menu_A)
+            
+            elif self.op == '3':
                 return
                     
                     
 
         elif self.res_name == '2':
             print("Your menu are: ",res_B.menu_B)
-            self.op = input("Press 1 for ADD ITEM & 2 for RETURN: ")
+            self.op = input("Press 1 for ADD ITEM & 2 for REMOVE ITEM & 3 for RETURN: ")
             if self.op == '1':
                 self.item = input("Add the name of item: ")
                 self.price = input("Add the price: ")
@@ -36,19 +41,30 @@ class Update_Menu(Restaurant_A,Restaurant_B,Restaurant_C):
                 print("Your updated menu are: ",res_B.menu_B)
                 
             elif self.op == '2':
+                self.item = input("Type the item you want to remove: ")
+                del res_B.menu_B[self.item]
+                print("Your updated menu are: ",res_B.menu_B)
+            
+            elif self.op == '3':
                 return
                         
                     
 
         elif self.res_name == '3':
             print("Your menu are: ",res_C.menu_C)
-            self.op = input("Press 1 for ADD ITEM & 2 for RETURN: ")
+            self.op = input("Press 1 for ADD ITEM & 2 for REMOVE ITEM & 3 for RETURN: ")
             if self.op == '1':
                 self.item = input("Add the name of item: ")
                 self.price = input("Add the price: ")
                 res_C.menu_C[self.item]=self.price
                 print("Your updated menu are: ",res_C.menu_C)
+
             elif self.op == '2':
+                self.item = input("Type the item you want to remove: ")
+                del res_C.menu_C[self.item]
+                print("Your updated menu are: ",res_C.menu_C)
+            
+            elif self.op == '3':
                 return
         
        

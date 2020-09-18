@@ -21,14 +21,14 @@ class Payment:
         elif n == '2':
             n = input("Please enter your UPI ID: ")
             print("Your payment is in progress.....") 
-            time.sleep(10)
+            time.sleep(4)
             print("Payment has been accepted")
                 
            
 
         print("Your Food is preparing......")
 
-        time.sleep(20)
+        time.sleep(10)
 
         print("Your food is ready to deliver. It will reach by you in 30 minutes :)")
 

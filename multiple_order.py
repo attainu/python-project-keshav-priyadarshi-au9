@@ -23,7 +23,7 @@ class Multiple_Order_Selection(Restaurant_A,Restaurant_B,Restaurant_C):
                 self.choice = input("Enter the item name you wish to order: ")
                 self.mul_order_list[self.choice]=res_A.menu_A[self.choice]
                                     
-                if i == '1':
+                if i == 1:
                     self.choice = input("Do you wish to add more food . Press Y for YES & N for NO: ")
                     if self.choice == 'Y' or self.choice == 'y':
                         print("This is the last item you will select as your cart is about to full")

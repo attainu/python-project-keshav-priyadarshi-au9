@@ -21,7 +21,7 @@ T = int(input("Enter the testcase: "))
 for i in range (T):
     print("~~~~~~~~~~~~~~~Welcome to Food-E-Licious~~~~~~~~~~~~~~~~~~~~~")
     
-    op = input("Hello USER! Press 1.ORDER FOOD, Press 2.UPDATE MENU")
+    op = input("Hello! are you a CUSTOMER OR OWNER. Press 1.CUSTOMER, Press 2.OWNER: ")
     if op == '1':
         print("We have certain rule to choose food item, if you search for lowest price then you can order one item in a session")
         op = input("Press 1.ORDER LOWEST PRICE FOOD & Press 2.ORDER MULTIPLE ITEM: ")
@@ -34,8 +34,6 @@ for i in range (T):
     elif op == '2':
         upd.add_item(res_A, res_B, res_C)
         
-    # elif op == '3':
-    #     exit()
-
+  
     
   
