@@ -1,12 +1,12 @@
 class Restaurant_A:
 
     def food_item(self):
-        self.menu_A = {'idli':'30','dosa':'45','vada':'35','paratha':'40','lassi':'25'}
+        self.menu_A = {'idli': '30', 'dosa': '45', 'vada': '35', 'paratha': '40', 'lassi': '25'}
 
 class Restaurant_B:
 
     def food_item(self):
-        self.menu_B = {'momo':'60','pasta':'50','burger':'70','pizza':'130','chowmin':'80'}
+        self.menu_B = {'momo': '60', 'pasta': '50', 'burger': '70','pizza':'130','chowmin':'80'}
 
 class Restaurant_C:
 
@@ -351,7 +351,7 @@ if __name__ == "__main__":
     T = int(input("Enter the testcase: "))
     for i in range (T):
         print("~~~~~~~~~~~~~~~Welcome to Food-E-Licious~~~~~~~~~~~~~~~~~~~~~")
-        
+        print()
         op = input("Hello! are you a CUSTOMER OR RESTAURANT OWNER. Press 1.CUSTOMER, Press 2.OWNER: ")
         print()
         if op == '1':
